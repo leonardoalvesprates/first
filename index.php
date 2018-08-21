@@ -15,7 +15,7 @@
  ?>
 <html>
  <head>
-  <title>My First Deploy PHP on OpenSHIFT</title>
+  <title>My First Deploy PHP on OpenShiftt</title>
   <meta http-equiv="refresh" content="<?php echo $sec?>;URL='<?php echo $page?>'">
  </head>
  <body style="background:<?php echo $color ?>">
