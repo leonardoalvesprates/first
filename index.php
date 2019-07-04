@@ -9,7 +9,7 @@
     // }
   $page = $_SERVER['PHP_SELF'];
   $sec = "5";
-  echo "<p><h2>Hello World v29 </h2></p>";
+  echo "<p><h2>Hello World v30 </h2></p>";
   echo "<p>App Server:" . $server . "</p>";
   // echo "<p>Contador Aleatorio:" . $nro . "</p>";
   echo 'PHP Version: ' . phpversion();
