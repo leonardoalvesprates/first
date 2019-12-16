@@ -27,3 +27,12 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
           $(tag)
+    - task: AzureRmWebAppDeployment@4
+      inputs:
+        ConnectionType: 'AzureRM'
+        azureSubscription: 'lapfirstphp - Azure'
+        appType: 'webAppContainer'
+        WebAppName: 'manualpipe'
+        DockerNamespace: 'lapfirstphpacr.azurecr.io'
+        DockerRepository: 'lapfirstphp'
+        DockerImageTag: '2'
