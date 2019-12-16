@@ -1,2 +1,2 @@
-FROM php:7.2-apache
-COPY . /var/www/html/
+FROM nginx
+COPY index.php /usr/share/nginx/html/index.html 
