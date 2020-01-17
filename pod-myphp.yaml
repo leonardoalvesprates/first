@@ -13,3 +13,17 @@ spec:
   dnsPolicy: ClusterFirst
   restartPolicy: Never
 status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  name: myphp
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: myphp
+  type: LoadBalancer
